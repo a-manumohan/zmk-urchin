@@ -69,11 +69,10 @@
         compatible = "zmk,keymap";
 
         base {
-            label = "Base";
             bindings = <
-&kp Q    &kp W    &kp F    &kp P    &kp B             &kp J        &kp L    &kp U        &kp Y      &kp SEMI
+&kp Q    &kp W    &kp F    &kp P    &kp B             &kp J        &kp L    &kp U        &kp Y      &kp SINGLE_QUOTE
 &kp A    &kp R    &kp S    &kp T    &kp G             &kp M        &kp N    &kp E        &kp I      &kp O
-&kp Z    &kp X    &kp C    &kp D    &kp V             &kp K        &kp H    &kp COMMA    &kp DOT    &kp SLASH
+&kp Z    &kp X    &kp C    &kp D    &kp V             &kp K        &kp H    &kp COMMA    &kp DOT    &kp SEMICOLON
                            &mo 2    &kp LEFT_SHIFT    &kp SPACE    &mo 1
             >;
         };
@@ -89,12 +88,11 @@
         };
 
         nav {
-            label = "Nav";
             bindings = <
-&kp TAB           &kp LG(TAB)      &kp HASH        &kp DLLR         &kp C_VOLUME_UP      &kp C_RESET     &kp AMPS         &kp UP         &kp HOME     &kp LC(BACKSPACE)
-&sk LEFT_SHIFT    &sk LCTRL        &sk LEFT_ALT    &sk LEFT_GUI     &kp C_VOLUME_DOWN    &kp CAPSLOCK    &kp LEFT         &kp DOWN       &kp RIGHT    &kp BACKSPACE
-&kp LA(LG(L))     &kp LG(SPACE)    &kp K_BACK      &kp K_FORWARD    &kp K_PLAY_PAUSE     &kp UNDER       &kp PAGE_DOWN    &kp PAGE_UP    &kp END      &kp ENTER
-                                                   &mo 2            &kp LEFT_SHIFT       &kp SPACE       &mo 1
+&kp TAB           &kp LG(TAB)      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))    &kp C_VOLUME_UP      &kp C_RESET     &kp AMPS         &kp UP         &kp HOME     &kp LC(BACKSPACE)
+&sk LEFT_SHIFT    &sk LCTRL        &sk LEFT_ALT        &sk LEFT_GUI         &kp C_VOLUME_DOWN    &kp CAPSLOCK    &kp LEFT         &kp DOWN       &kp RIGHT    &kp BACKSPACE
+&kp LA(LG(L))     &kp LG(SPACE)    &kp K_BACK          &kp K_FORWARD        &kp K_PLAY_PAUSE     &kp UNDER       &kp PAGE_DOWN    &kp PAGE_UP    &kp END      &kp ENTER
+                                                       &mo 2                &kp LEFT_SHIFT       &kp SPACE       &mo 1
             >;
         };
 
