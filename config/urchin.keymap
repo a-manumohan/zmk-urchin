@@ -75,6 +75,8 @@
 &kp Z    &kp X    &kp C    &kp D    &kp V             &kp K        &kp H    &kp COMMA    &kp DOT    &kp SEMICOLON
                            &mo 2    &kp LEFT_SHIFT    &kp SPACE    &mo 1
             >;
+
+            label = "base";
         };
 
         sym {
@@ -94,6 +96,8 @@
 &kp LA(LG(L))     &kp LG(SPACE)    &kp K_BACK          &kp K_FORWARD        &kp K_PLAY_PAUSE     &kp UNDER       &kp PAGE_DOWN    &kp PAGE_UP    &kp END      &kp ENTER
                                                        &mo 2                &kp LEFT_SHIFT       &kp SPACE       &mo 1
             >;
+
+            label = "nav";
         };
 
         num {
