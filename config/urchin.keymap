@@ -91,7 +91,7 @@
 
         nav {
             bindings = <
-&kp TAB           &kp LG(TAB)      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))    &kp C_VOLUME_UP      &kp C_RESET     &kp AMPS         &kp UP         &kp HOME     &kp LC(BACKSPACE)
+&kp TAB           &kp LG(TAB)      &kp LG(LA(LEFT))    &kp LG(LA(RIGHT))    &kp LG(GRAVE)        &kp C_RESET     &kp AMPS         &kp UP         &kp HOME     &kp LC(BACKSPACE)
 &sk LEFT_SHIFT    &sk LCTRL        &sk LEFT_ALT        &sk LEFT_GUI         &kp C_VOLUME_DOWN    &kp CAPSLOCK    &kp LEFT         &kp DOWN       &kp RIGHT    &kp BACKSPACE
 &kp LA(LG(L))     &kp LG(SPACE)    &kp K_BACK          &kp K_FORWARD        &kp K_PLAY_PAUSE     &kp UNDER       &kp PAGE_DOWN    &kp PAGE_UP    &kp END      &kp ENTER
                                                        &mo 2                &kp LEFT_SHIFT       &kp SPACE       &mo 1
