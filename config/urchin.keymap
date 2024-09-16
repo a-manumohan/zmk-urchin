@@ -104,7 +104,7 @@
             label = "Num";
             bindings = <
 &kp TAB           &kp NUMBER_7    &kp NUMBER_8    &kp N9          &kp LG(GRAVE)     &kp F12      &kp F7    &kp F8    &kp F9    &kp LC(BACKSPACE)
-&sk LEFT_SHIFT    &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp LC(LG(L))     &kp F11      &kp F4    &kp F5    &kp F6    &kp BACKSPACE
+&sk LEFT_SHIFT    &kp NUMBER_4    &kp NUMBER_5    &kp NUMBER_6    &kp LG(LA(L))     &kp F11      &kp F4    &kp F5    &kp F6    &kp BACKSPACE
 &kp NUMBER_0      &kp NUMBER_1    &kp NUMBER_2    &kp NUMBER_3    &trans            &kp F10      &kp F1    &kp F2    &kp F3    &kp ENTER
                                                   &trans          &kp LEFT_SHIFT    &kp SPACE    &trans
             >;
