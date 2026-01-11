@@ -18,9 +18,10 @@
 
 // Layer definitions
 #define BASE 0
-#define SYM  1
-#define NUM  2
-#define BT   3
+#define SYM_L 1
+#define SYM_R 2
+#define NUM  3
+#define BT   4
 
 / {
     behaviors {
@@ -59,7 +60,7 @@
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <SYM SYM>;
+            if-layers = <SYM_L SYM_R>;
             then-layer = <NUM>;
         };
     };
@@ -85,11 +86,11 @@
                 &kp Q       &kp W       &kp E        &kp R        &kp T          &kp Y        &kp U        &kp I        &kp O       &kp P
                 &hm LGUI A  &hm LALT S  &hm LCTRL D  &hm LSHFT F  &kp G          &kp H        &hm RSHFT J  &hm RCTRL K  &hm RALT L  &hm RGUI SEMI
                 &kp Z       &kp X       &kp C        &kp V        &kp B          &kp N        &kp M        &kp COMMA    &kp DOT     &kp FSLH
-                                        &kp ESC      &lt SYM SPACE                &lt SYM RET  &kp RSHFT
+                                        &kp ESC      &lt SYM_L SPACE                &lt SYM_R RET  &kp RSHFT
             >;
         };
 
-        // SYM LAYER
+        // SYM_L LAYER (left thumb - hold Space)
         // ╭─────┬─────┬─────┬─────┬─────╮   ╭─────┬─────┬─────┬─────┬─────╮
         // │ TAB │  [  │  {  │  (  │  ~  │   │  ^  │  )  │  }  │  ]  │  `  │
         // ├─────┼─────┼─────┼─────┼─────┤   ├─────┼─────┼─────┼─────┼─────┤
@@ -100,12 +101,24 @@
         //             │ DEL │     │               │     │BKSP │
         //             ╰─────┴─────╯               ╰─────┴─────╯
 
-        sym_layer {
+        sym_l_layer {
             bindings = <
                 &kp TAB    &kp LBKT   &kp LBRC   &kp LPAR   &kp TILDE      &kp CARET  &kp RPAR   &kp RBRC   &kp RBKT   &kp GRAVE
                 &kp AT     &kp ASTRK  &kp EQUAL  &kp UNDER  &kp DLLR       &kp HASH   &kp PLUS   &kp LT     &kp GT     &kp COLON
                 &kp MINUS  &kp PIPE   &kp AMPS   &kp FSLH   &kp PRCNT      &kp BSLH   &kp EXCL   &kp QMARK  &kp DQT    &kp SQT
-                                      &kp DEL    &trans                    &trans     &kp BSPC
+                                      &kp DEL    &trans                    &mo SYM_R  &kp BSPC
+            >;
+        };
+
+        // SYM_R LAYER (right thumb - hold Enter)
+        // Same as SYM_L
+
+        sym_r_layer {
+            bindings = <
+                &kp TAB    &kp LBKT   &kp LBRC   &kp LPAR   &kp TILDE      &kp CARET  &kp RPAR   &kp RBRC   &kp RBKT   &kp GRAVE
+                &kp AT     &kp ASTRK  &kp EQUAL  &kp UNDER  &kp DLLR       &kp HASH   &kp PLUS   &kp LT     &kp GT     &kp COLON
+                &kp MINUS  &kp PIPE   &kp AMPS   &kp FSLH   &kp PRCNT      &kp BSLH   &kp EXCL   &kp QMARK  &kp DQT    &kp SQT
+                                      &kp DEL    &mo SYM_L                 &trans     &kp BSPC
             >;
         };
 
